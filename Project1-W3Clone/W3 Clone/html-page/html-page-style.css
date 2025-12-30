@@ -1,0 +1,330 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: Arial, sans-serif;
+}
+
+#navbar-container {
+     background-color: #222;
+     color: white;
+     padding: 15px;
+     text-align: center;
+}
+
+.container {
+     display: flex;
+     flex-direction: row;
+     height: 100vh;
+}
+
+.sidebar {
+     width: 18%;
+     background-color: #15202b;
+     padding-top: 20px;
+     padding-bottom: 50px;
+     overflow-y: scroll;
+     overflow-x: hidden;
+     color: #ccc;
+     font-family: "Segoe UI", Arial, sans-serif;
+     line-height: 1.5;
+}
+
+.sidebar .menu-item {
+     display: block;
+     text-decoration: none;
+     color: #ccc;
+     position: relative;
+     padding: 2px 15px 1px 40px;
+     width: 100%;
+     font-size: 15px;
+     line-height: 1.5;
+}
+
+.sidebar .menu-item:hover {
+     background-color: rgba(255, 255, 255, 0.145);
+     color: #fff;
+}
+
+.menu-item.active {
+     background-color: #00b362;
+     color: #fff;
+}
+
+.menu-item.active:hover {
+     background-color: #00b362;
+     color: #fff;
+}
+
+.sidebar h2 {
+     padding-left: 16px;
+     margin-top: 4px;
+     margin-bottom: 4px;
+     font-size: 21px;
+     line-height: 1.5;
+}
+
+/* Main Content */
+
+.main-content {
+     width: 82%;
+     height: auto;
+     padding: 16px 32px 32px 32px;
+     border-right: 1px solid rgba(255, 255, 255, 0.145);
+     background-color: #1d2a35;
+     color: #ddd;
+     line-height: 1.5;
+     overflow: auto;
+}
+
+.main-content h1 {
+     font-size: 42px;
+     line-height: 1.5;
+     font-family: "Segoe UI", Arial, sans-serif;
+     font-weight: 400;
+     margin: 10px 0px;
+}
+
+.main-content h2 {
+     margin: 10px 0px;
+     font-size: 32px;
+     font-weight: 400;
+     font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.main-content h3 {
+     font-size: 24px;
+     line-height: 1.5;
+     color: #ddd;
+     font-family: "Segoe UI", Arial, sans-serif;
+     font-weight: 400;
+}
+
+.main-content p {
+     font-family: Verdana, sans-serif;
+     font-size: 15px;
+     margin: 20px 0;
+}
+
+.top-add {
+     height: 90px;
+}
+
+.main-content .btn-container {
+     height: 45px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.main-content .previous,
+.next {
+     color: #ffffff;
+     background-color: #04aa6d;
+     border: none;
+     outline: none;
+     padding: 9px 5px;
+     border-radius: 5px;
+     font-weight: bold;
+     text-decoration: none;
+     font-size: 18px;
+     width: 7vw;
+     font-weight: bold;
+     text-align: center;
+     cursor: pointer;
+}
+
+.main-content .previous:hover {
+     background-color: #078e5d;
+}
+
+.main-content .next:hover {
+     background-color: #078e5d;
+}
+
+.main-content .previous i {
+     padding-right: 5px;
+}
+
+.main-content .next i {
+     padding-left: 5px;
+}
+
+.main-content .learn-html {
+     height: 290px;
+     margin: 24px -19px;
+     background-color: #193d3d;
+     padding: 20px 32px 22px 32px;
+     border-radius: 5px;
+     border-left: none;
+     /* border-bottom: 1px solid rgba(255, 255, 255, 0.145); */
+}
+
+.main-content hr {
+     opacity: 0.1;
+}
+
+.main-content .btn {
+     color: #ffffff;
+     background-color: #04aa6d;
+     border: none;
+     outline: none;
+     padding: 9px 5px;
+     border-radius: 5px;
+     font-weight: bold;
+     text-decoration: none;
+     font-size: 18px;
+     /* width: 7vw; */
+     font-weight: bold;
+     text-align: center;
+     cursor: pointer;
+}
+
+.main-content .btn:hover {
+     background-color: #078e5d;
+}
+
+.main-content .start-learn {
+     padding: 8px 25px;
+}
+
+/*  */
+
+.html-example {
+     background-color: #38444d;
+     border-radius: 10px;
+}
+
+.html-example h3 {
+     color: #dddddd;
+     margin: 10px 0px;
+     font-size: 24px;
+     padding-top: 20px;
+     padding-left: 20px;
+     font-weight: bold;
+     line-height: 1.5;
+}
+
+.html-example .html-code {
+     height: 300px;
+     /* width: 374px; */
+     font-family: Consolas, Menlo, "courier new", monospace;
+     background-color: rgb(21, 32, 43);
+     color: white;
+     border-left: 4px solid #04aa6d;
+     border-left-color: rgb(40, 44, 52);
+     font-size: 15px;
+     margin: 16px !important;
+     padding: 8px 12px;
+     word-wrap: break-word;
+     line-height: 1.5;
+}
+
+.html-example .html-code::before {
+     box-sizing: inherit;
+}
+
+.html-example .html-code::after {
+     box-sizing: inherit;
+}
+
+.selector-color {
+     color: #f99;
+}
+
+.tagcolor {
+     color: #8cb;
+}
+
+.css-code-property {
+     color: #c5a5c5;
+}
+
+.such-that {
+     color: #fff;
+}
+
+.css-code-pro-value {
+     color: #88c999;
+}
+
+.semi-colon {
+     color: #fff;
+}
+
+.css-brecut {
+     color: #fff;
+}
+
+.html-example .tryit-btn {
+     background-color: #04aa6d;
+     color: #ffffff;
+     border-radius: 5px;
+     font-size: 18px;
+     font-weight: bold;
+     width: 200px;
+     border: none;
+     display: inline-block;
+     padding: 8px 16px;
+     margin-bottom: 16px;
+     margin-left: 16px;
+     vertical-align: middle;
+     overflow: hidden;
+     text-decoration: none;
+     text-align: center;
+     cursor: pointer;
+     white-space: nowrap;
+}
+
+.html-example .tryit-btn:hover {
+     background-color: #0c7c53;
+}
+
+.html-example .tryit-btn i {
+     height: 12px;
+}
+
+.black-white-btn {
+     padding: 10px 20px;
+     background-color: #38444d;
+     color: #ddd;
+     text-decoration: none;
+     font-weight: 550;
+     border-radius: 5px;
+     line-height: 1.5;
+     margin: 20px 0px;
+}
+
+.black-white-btn:hover {
+     color: #fff;
+     cursor: pointer;
+     background-color: #0d1721;
+}
+
+.html-exercise-container {
+     background-color: #2d3748;
+     height: 372px;
+     padding: 20px 20px 40px;
+     border-radius: 30px;
+     text-align: center;
+     color: #fff;
+     font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.html-exercise-container p {
+     font-family: "Segoe UI", Arial, sans-serif;
+     font-size: 18px;
+     line-height: 1.5;
+}
+
+/* Add Bar */
+
+.add-bar {
+     /* width: 14%; */
+     color: #ddd;
+     background-color: #1d2a35;
+     padding: 16px 8px 16px 8px;
+}
